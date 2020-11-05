@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Spending Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+<header class="heading">
+    <h1 class="center-text header-font unselectable">Spending Tracker</h1>
+</header>
+
+<section class="options-container">
+    <select class="options-list" name="month" id="month">
+        <option value="-2" disabled>Month</option>
+        <option value="-1">All Months</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+
+    <select class="options-list" name="year" id="year">
+        <option value="-1" disabled>Year</option>
+    </select>
+
+    <select class="options-list" name="category" id="category">
+        <option disabled>Category</option>
+        <option value="-1" selected>All</option>
+        <option value="0">Groceries</option>
+        <option value="1">Recreation</option>
+        <option value="2">Eating Out</option>
+        <option value="3">Pet Supplies</option>
+        <option value="4">Books</option>
+        <option value="5">Learning Material</option>
+        <option value="6">Home</option>
+        <option value="7">Gift</option>
+        <option value="8">Alcohol</option>
+        <option value="9">Rent</option>
+        <option value="10">Subscriptions</option>
+        <option value="11">Other</option>
+    </select>
+
+    <button class="button search-button">Search</button>
+
+    <input type="checkbox" name="exclude-rent" id="exclude-rent">
+    <label for="exclude-rent" id="exclude-rent-label">Exclude Rent/Subscriptions</label>
+
+</section>
+
+<section class="entry-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <button class="button add-entry-button" data-popup-trigger="one">Add Entry</button>
+</section>
+
+<!-- Modals -->
+<div class="backdrop"></div>
+
+<!-- Add Entry Modal -->
+<div class="add-entry-modal">
+    <div class="add-modal-options">
+        <form class="add-form" autocomplete="off">
+            <div class="form-input">
+                <label for="date">Date </label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="form-input">
+                <input class="input input-text" type="text" placeholder="Amount (SEK)" name="amount" id="amount" size="40">
+            </div>
+            <div class="form-input">
+                <select id="category-add">
+                    <option value="-1" selected disabled>Category</option>
+                    <option value="0">Groceries</option>
+                    <option value="1">Recreation</option>
+                    <option value="2">Eating Out</option>
+                    <option value="3">Pet Supplies</option>
+                    <option value="4">Books</option>
+                    <option value="5">Learning Material</option>
+                    <option value="6">Home</option>
+                    <option value="7">Gifts</option>
+                    <option value="8">Alcohol</option>
+                    <option value="9">Rent</option>
+                    <option value="10">Subscriptions</option>
+                    <option value="11">Other</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <input class="input input-text" type="text" placeholder="Comment" name="comment" id="comment" size="40">
+            </div>
+        </form>
+    </div>
+    <div class="add-modal-button-choices">
+        <button class="button add-entry-cancel-button">Cancel</button>
+        <button class="button add-entry-confirm-button">Confirm</button>
+        <button class="button edit-entry-confirm-button">Confirm Edit</button>
+    </div>
+</div>
+
+<!-- Edit or Delete Modal -->
+<div class="edit-entry-modal">
+    <h2 class="center-text"></h2>
+    <div>
+        <h2></h2>
+    </div>
+    <div class="edit-modal-button-choices">
+        <button class="button edit-entry-edit-button">Edit Entry</button>
+        <button class="button edit-entry-delete-button">Delete Entry</button>
+    </div>
+    <div class="confirm-delete-options">
+        <p class="inline">Are you sure? </p>
+        <button class="button cancel-delete-button">Cancel</button>
+        <button class="button confirm-delete-button">Yes, Delete</button>
+    </div>
+</div>
+
+<script src="javascript/state.js"></script>
+<script src="javascript/rentCheck.js"></script>
+<script src="javascript/modalHandling.js"></script>
+<script src="javascript/optionsPopulator.js"></script>
+<script src="javascript/entryGetter.js"></script>
+<script src="javascript/entryPoster.js"></script>
+<script src="javascript/entryPatcherAndDeleter.js"></script>
+
+</body>
+
+</html>
+
+
