@@ -238,15 +238,15 @@ nav h1 {
 }
 
 .experience {
-    background: linear-gradient(to bottom right, #b3cde0 calc(50% - 1px), #002C4A, #002C4A calc(50% + 1px) );
+    background: linear-gradient(to top left, #b3cde0 calc(50% - 1px), #002C4A, #002C4A calc(50% + 1px) );
     padding: 2em 2em 7em;
 }
 
 .experience h1 {
-    text-align: left;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 3em;
-    color: #011f4bea;
+    color: #b3cde0;
 }
 
 .experience-items {
@@ -264,9 +264,8 @@ nav h1 {
     font-size: 1em;
     font-family: 'Open Sans', serif;
     
-    background: linear-gradient(to bottom, #db254c, #db2525);
+    /* background: linear-gradient(to bottom, #004C7F, #03396c); */
     color: #b3cde0;
-    border-radius: 8px;
     text-align: left;
     line-height: 2em;
 }
@@ -274,25 +273,35 @@ nav h1 {
 .spending-tracker-item h3 {
     font-size: 2em;
     text-align: center;
-    color: #c7dff0;
+    color: #b3cde0;
     margin-bottom: 0.5em;
 }
 
 .spending-tracker-item figure {
     width: 60%;
     align-self: center;
-    margin-right: 2em;
-    margin-bottom: 1em;
 }
 
 .spending-tracker-item figure img {
     width: 100%;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     /* box-shadow: 0 0 2px rgba(0,0,0,0.5); */
 }
 
 .spending-tracker-item p {
-    width: 100%;
+    box-sizing: border-box;
+    width: 60%;
+    padding: 2em 5em 2em 2em;
+    font-size: 1em;
+    font-family: 'Open Sans', serif;
+    text-align: left;
+    align-self: center;
+    line-height: 2em;
+    background: linear-gradient(to bottom, #004C7F, #03396c);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #b3cde0;
 }
 
 
