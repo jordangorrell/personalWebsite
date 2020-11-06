@@ -289,19 +289,48 @@ nav h1 {
     /* box-shadow: 0 0 2px rgba(0,0,0,0.5); */
 }
 
-.spending-tracker-item p {
+.experience-description {
     box-sizing: border-box;
     width: 60%;
     padding: 2em 5em 2em 2em;
-    font-size: 1em;
-    font-family: 'Open Sans', serif;
-    text-align: left;
     align-self: center;
-    line-height: 2em;
     background: linear-gradient(to bottom, #004C7F, #03396c);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+
+.spending-tracker-item p {
+    text-align: left;
+    font-size: 1em;
+    font-family: 'Open Sans', serif;
+    line-height: 2em;
     color: #b3cde0;
+    margin-top: 1em;
+}
+
+.spending-tracker-item p:first-child {
+    margin-top: 0;
+}
+
+.experience p a {
+    color: #E0C6B3;
+    font-weight: 700;
+    transition: color 0.07s ease-in;
+}
+
+.experience p a:visited {
+    color: #E0C6B3;
+    font-weight: 700;
+}
+
+.experience p a:hover {
+    color: #D8A29F;
+    font-weight: 700;
+}
+
+.experience p a:visited:hover {
+    color: #D8A29F;
+    font-weight: 700;
 }
 
 
