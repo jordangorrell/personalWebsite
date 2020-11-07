@@ -338,9 +338,60 @@ nav h1 {
 }
 
 .contact {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     background: linear-gradient(to top, #004C7F, #03396c);
+    padding: 2em 7em;
+    font-family: 'Open sans', sans-serif;
+    height: 92vh;
 }
 
+.contact h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em;
+    color: #b3cde0;
+}
+
+.contact h3 {
+    margin-top: 2em;    
+    color: #b3cde0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.contact h4 {
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 2em;
+}
+
+.contact h4 a {
+    color: #E0C6B3;
+    font-weight: 700;
+    transition: color 0.07s ease-in;
+}
+
+.contact h4 a:visited {
+    color: #E0C6B3;
+    font-weight: 700;
+}
+
+.contact h4 a:hover {
+    color: #D8A29F;
+    font-weight: 700;
+}
+
+.contact h4 a:visited:hover {
+    color: #D8A29F;
+    font-weight: 700;
+}
+
+.contact-email {
+    color: #b3cde0;
+}
 
 /* Animations */
 
