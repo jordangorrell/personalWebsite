@@ -492,14 +492,6 @@ nav h1, nav a {
         display: none;
     }
 
-    .coder,
-    .reader,
-    .musician,
-    .story,
-    .experience-item p {
-        font-size: 14px;
-    }
-
     .story {
         flex-direction: column;
         padding: 1em;
