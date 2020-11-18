@@ -495,7 +495,8 @@ nav h1, nav a {
     .coder,
     .reader,
     .musician,
-    .story {
+    .story,
+    .experience-item p {
         font-size: 12px;
     }
 
@@ -538,12 +539,5 @@ nav h1, nav a {
 @media (max-width: 655px) {
     nav a {
         display: none;
-    }
-}
-
-@media (max-width: 410px) {
-    .experience-item p {
-        /* text-align: center; */
-        font-size: 12px;
     }
 }
