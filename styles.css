@@ -471,7 +471,7 @@ nav h1, nav a {
     .about {
         display: flex;
         flex-direction: column;
-        padding: 2em 2em 7em;
+        padding: 2em 0.5em 7em;
     }
 
     .about h3 {
@@ -512,6 +512,11 @@ nav h1, nav a {
     .experience-description, 
     .experience-item figure {
         width: 100%;
+    }
+
+    .experience-item {
+        padding: 0;
+        margin-top: 2em;
     }
 
     .experience-description {
