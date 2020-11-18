@@ -481,7 +481,13 @@ nav h1, nav a {
     }
 
     .reader, .musician {
-        margin-top: 2em;
+        margin-top: 3em;
+    }
+
+    .coder p,
+    .reader p,
+    .musician p {
+        margin-top: 1em;
     }
 
     .start-background-wrapper {
