@@ -281,8 +281,8 @@ nav h1 {
     margin-bottom: 0.5em;
 }
 
+
 .experience-item figure {
-    width: 60%;
     align-self: center;
 }
 
@@ -293,9 +293,13 @@ nav h1 {
     /* box-shadow: 0 0 2px rgba(0,0,0,0.5); */
 }
 
+.experience-description, 
+.experience-item figure {
+    width: 60%;
+}
+
 .experience-description {
     box-sizing: border-box;
-    width: 60%;
     padding: 2em 5em 2em 2em;
     align-self: center;
     background: linear-gradient(to bottom, #004C7F, #03396c);
@@ -389,7 +393,7 @@ nav h1 {
     font-weight: 700;
 }
 
-.contact-email {
+#contact-email {
     color: #b3cde0;
 }
 
@@ -452,8 +456,94 @@ nav h1, nav a {
 
 /* Media Queries */
 
-/* @media (max-width: 1080px) {
+
+@media (max-width: 1300px) {
+    nav {
+        padding: 1em 0;
+    }
+}
+
+@media (max-width: 855px) {
+    nav {
+        padding: 1em 0;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 2em 2em 7em;
+    }
+
+    .about h3 {
+        background: #b3cde0;
+        padding: 0.5em;
+        border-radius: 8px;
+    }
+
+    .reader, .musician {
+        margin-top: 2em;
+    }
+
     .start-background-wrapper {
         background: none;
     }
-} */
+
+    .start-side-text {
+        display: none;
+    }
+
+    .coder,
+    .reader,
+    .musician,
+    .story {
+        font-size: 12px;
+    }
+
+    .story {
+        flex-direction: column;
+        padding: 1em;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .story p {
+        padding: 0;
+        justify-self: stretch;
+    }
+
+    .story figure {
+        width: 100%;
+    }
+
+    .experience-description, 
+    .experience-item figure {
+        width: 100%;
+    }
+
+    .experience-description {
+        padding: 2em;
+    }
+
+    .contact {
+        padding: 2em;
+    }
+
+
+    #contact-email {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 655px) {
+    nav a {
+        display: none;
+    }
+}
+
+@media (max-width: 410px) {
+    .experience-item p {
+        /* text-align: center; */
+        font-size: 12px;
+    }
+}
